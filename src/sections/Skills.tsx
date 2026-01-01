@@ -51,7 +51,7 @@ const SkillCard = ({ category, index }: { category: typeof skillCategories[0], i
                     component={motion.div}
                     whileHover={{ y: -10, boxShadow: '0 10px 30px rgba(59, 130, 246, 0.1)' }}
                     sx={{
-                        p: 4,
+                        p: { xs: 3, md: 4 },
                         height: '100%',
                         bgcolor: 'background.paper',
                         borderRadius: 4,
@@ -69,7 +69,14 @@ const SkillCard = ({ category, index }: { category: typeof skillCategories[0], i
                     <Box className="skill-icon" sx={{ mb: 2, transition: 'transform 0.3s ease' }}>
                         {category.icon}
                     </Box>
-                    <Typography variant="h5" sx={{ mb: 3, fontWeight: 700 }}>
+                    <Typography
+                        variant="h5"
+                        sx={{
+                            mb: 3,
+                            fontWeight: 700,
+                            fontSize: { xs: '1.25rem', md: '1.5rem' }
+                        }}
+                    >
                         {category.title}
                     </Typography>
                     <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 1 }}>
@@ -83,7 +90,7 @@ const SkillCard = ({ category, index }: { category: typeof skillCategories[0], i
                                     bgcolor: 'rgba(255, 255, 255, 0.05)',
                                     borderRadius: 2,
                                     color: 'text.secondary',
-                                    fontSize: '0.85rem',
+                                    fontSize: { xs: '0.75rem', md: '0.85rem' },
                                 }}
                             >
                                 {skill}

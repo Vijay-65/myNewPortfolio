@@ -45,14 +45,14 @@ const About = () => {
                         About Me
                     </Typography>
 
-                    <Grid container spacing={6} justifyContent="center">
-                        <Grid size={{ xs: 12, md: 8 }}>
+                    <Grid container spacing={4} justifyContent="center">
+                        <Grid size={{ xs: 12, md: 10, lg: 8 }}>
                             <Paper
                                 elevation={0}
                                 sx={{
-                                    p: { xs: 4, md: 6 },
+                                    p: { xs: 3, sm: 4, md: 6 },
                                     bgcolor: 'background.paper',
-                                    borderRadius: 4,
+                                    borderRadius: { xs: 3, md: 4 },
                                     border: '1px solid rgba(255, 255, 255, 0.05)',
                                     position: 'relative',
                                     overflow: 'hidden',
@@ -70,18 +70,40 @@ const About = () => {
                                     }}
                                 />
 
-                                <Typography variant="h5" sx={{ mb: 3, fontWeight: 600 }}>
+                                <Typography
+                                    variant="h5"
+                                    sx={{
+                                        mb: 3,
+                                        fontWeight: 600,
+                                        fontSize: { xs: '1.25rem', md: '1.5rem' }
+                                    }}
+                                >
                                     I'm a <Box component="span" sx={{ color: 'secondary.main' }}>React Developer</Box> passionate about building modern web applications.
                                 </Typography>
 
-                                <Typography variant="body1" sx={{ color: 'text.secondary', mb: 3, fontSize: '1.1rem' }}>
+                                <Typography
+                                    variant="body1"
+                                    sx={{
+                                        color: 'text.secondary',
+                                        mb: 3,
+                                        fontSize: { xs: '1rem', md: '1.1rem' },
+                                        lineHeight: 1.7
+                                    }}
+                                >
                                     With a strong foundation in frontend technologies, I specialize in creating
                                     <Box component="span" sx={{ color: 'primary.main', fontWeight: 600 }}> high-performance</Box>,
                                     <Box component="span" sx={{ color: 'primary.main', fontWeight: 600 }}> responsive</Box>, and
                                     <Box component="span" sx={{ color: 'primary.main', fontWeight: 600 }}> user-centric</Box> web experiences.
                                 </Typography>
 
-                                <Typography variant="body1" sx={{ color: 'text.secondary', fontSize: '1.1rem' }}>
+                                <Typography
+                                    variant="body1"
+                                    sx={{
+                                        color: 'text.secondary',
+                                        fontSize: { xs: '1rem', md: '1.1rem' },
+                                        lineHeight: 1.7
+                                    }}
+                                >
                                     My focus is on writing clean, maintainable code and implementing
                                     cinematic animations that enhance user engagement without being distracting.
                                     I'm constantly exploring new tools and techniques to stay at the

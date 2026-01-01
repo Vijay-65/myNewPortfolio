@@ -114,22 +114,22 @@ const Hero = () => {
 
                     <Grid size={{ xs: 12, md: 5 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                         <Box
-                            // component={motion.div}
-                            // initial={{ opacity: 0, scale: 0.8 }}
-                            // animate={{ opacity: 1, scale: 1 }}
-                            // transition={{ duration: 1 }}
+                            component={motion.div}
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 1 }}
                             sx={{ position: 'relative' }}
                         >
                             <Box
                                 component={motion.div}
-                                // animate={{
-                                //     y: [0, -20, 0],
-                                // }}
-                                // transition={{
-                                //     duration: 4,
-                                //     repeat: Infinity,
-                                //     ease: "easeInOut"
-                                // }}
+                                animate={{
+                                    y: [0, -20, 0],
+                                }}
+                                transition={{
+                                    duration: 4,
+                                    repeat: Infinity,
+                                    ease: "easeInOut"
+                                }}
                                 sx={{
                                     position: 'relative',
                                     zIndex: 1,
@@ -137,8 +137,8 @@ const Hero = () => {
                             >
                                 <Avatar
                                     sx={{
-                                        width: { xs: 280, md: 390 },
-                                        height: { xs: 20, md: 390 },
+                                        width: { xs: 280, md: 400 },
+                                        height: { xs: 280, md: 400 },
                                         border: '8px solid rgba(255, 255, 255, 0.05)',
                                         boxShadow: '0 0 50px rgba(59, 130, 246, 0.4)',
                                         '& img': {
